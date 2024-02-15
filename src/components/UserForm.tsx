@@ -27,11 +27,11 @@ function UserForm() {
         <label htmlFor="name">
           Name
           <input
-            name="name"
             id="name"
+            type="text"
+            name="name"
             value={name}
             onChange={handleChange}
-            type="text"
           />
         </label>
       </div>
