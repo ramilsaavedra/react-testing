@@ -1,27 +1,23 @@
-import { useEffect } from 'react';
 import useUserContext from '../hooks/userHooks.ts';
 
 function UserList() {
   const { users } = useUserContext();
 
-  useEffect(() => {
-    console.log(users);
-  }, [users]);
   return (
     <div>
       <h1>User List</h1>
-      <div>
+      <ul>
         {users.length ? (
           users.map((user) => (
-            <div>
+            <li>
               <span>{user.name}</span>
               <span>{user.email}</span>
-            </div>
+            </li>
           ))
         ) : (
           <h2>No users</h2>
         )}
-      </div>
+      </ul>
     </div>
   );
 }

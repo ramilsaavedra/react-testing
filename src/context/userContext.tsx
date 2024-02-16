@@ -9,7 +9,7 @@ export interface UserProps {
   email: string;
 }
 
-interface UsersProps {
+export interface UsersProps {
   users: UserProps[];
   handleUser: (user: UserProps) => void;
 }
@@ -25,8 +25,6 @@ export function UserContextProvider({
   children,
 }: UserContextProviderProps): JSX.Element {
   const [users, setUsers] = useState<UserProps[]>([]);
-
-  console.log(users, 'context');
 
   const handleUser = (user: UserProps) => {
     setUsers((prevValue) => {

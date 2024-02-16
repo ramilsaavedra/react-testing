@@ -16,7 +16,10 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.ts'] }],
+    'react/jsx-filename-extension': [
+      1,
+      { extensions: ['.tsx', '.ts', 'test.js'] },
+    ],
     'react/react-in-jsx-scope': 'off',
     'import/no-extraneous-dependencies': [
       'error',

@@ -22,7 +22,7 @@ function UserForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} aria-label="form">
       <div>
         <label htmlFor="name">
           Name
