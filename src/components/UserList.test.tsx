@@ -4,6 +4,8 @@ import UserList from './UserList.tsx';
 test('show no users when users is empty', () => {
   render(<UserList />);
 
+  screen.logTestingPlaygroundURL();
+
   const noUsers = screen.getByText(/no users/i);
 
   expect(noUsers).toBeInTheDocument();
