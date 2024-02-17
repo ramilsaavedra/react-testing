@@ -17,8 +17,6 @@ test('it calls on handleSubmit', async () => {
 
   render(<UserForm />);
 
-  screen.logTestingPlaygroundURL();
-
   const nameInput = screen.getByRole('textbox', { name: /name/i });
   const emailInput = screen.getByRole('textbox', { name: /email/i });
   const form = screen.getByRole('form');
